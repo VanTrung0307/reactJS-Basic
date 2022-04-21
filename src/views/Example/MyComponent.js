@@ -19,6 +19,11 @@ class MyComponent extends React.Component {
         })
     }
 
+    handleClickButton = () => {
+        console.log('hit the button')
+        alert('click me')
+    }
+
     render() {
         //let name = 'Trung';
 
@@ -36,6 +41,9 @@ class MyComponent extends React.Component {
                 </div>
                 <div className="second">
                     My lesson : {this.state.channel}
+                </div>
+                <div className="third">
+                    <button onClick={() => this.handleClickButton()}>Click me</button>
                 </div>
             </React.Fragment>
         )
